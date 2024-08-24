@@ -1,16 +1,15 @@
-// "use client";
+"use client";
 
-// import { useRouter } from "next/navigation"
+import { useRouter } from "next/navigation"
+import { Button } from "@mui/material";
 
 export default function Home() {
-  // const router = useRouter()
+  const router = useRouter()
 
   return (
-    <div>
+    <div style={{ height: '100%', margin: 'auto' }}>
       <h1>Home</h1>
-      {/* <button onClick={() => router.push("/user/login")}>Login</button> */}
-      <p>You are in the {process.env.NODE_ENV} environment</p>
-      <p>The jwt issuer is {process.env.JWT_ISSUER}</p>
+      <Button onClick={() => router.push("/auth/login")}>Login</Button>
     </div>
   )
 }

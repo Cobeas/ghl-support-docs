@@ -1,0 +1,46 @@
+.verification-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    max-height: 600px;
+    width: 60%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(226, 205, 10);
+}
+
+.verification-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .verification-container {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .verification-header {
+        width: 100%;
+        height: 30%;
+    }
+
+    .verification-box {
+        width: 100%;
+        height: 70%;
+    }
+}
+
+@media only screen and (max-height: 600px) {
+    .verification-container {
+        height: 100vh;
+        box-shadow: none;
+        border: none;
+    }
+}
